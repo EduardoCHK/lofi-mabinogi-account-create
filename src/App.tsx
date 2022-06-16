@@ -3,21 +3,22 @@ import React from 'react';
 function App() {
     return (
         <div className="App">
+            <h1>歡迎加入Lo-Fi (hehe) Mabinogi!</h1>
             <form action="/action_page.php">
-                <label htmlFor="fname">First name:</label>
-                <input type="text" id="fname" name="fname" />
+                <label htmlFor="username">帳號:</label>
+                <input type="text" id="username" name="username" />
                 <br />
                 <br />
-                <label htmlFor="lname">Last name:</label>
-                <input type="text" id="lname" name="lname" />
+                <label htmlFor="password">密碼:</label>
+                <input type="password" id="password" name="password" />
                 <br />
                 <br />
                 <input
                     type="submit"
-                    value="Submit"
+                    value="確認申請"
                     onClick={async (e) => {
                         e.preventDefault();
-                        alert('OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO');
+                        alert('帳號申請成功!');
                     }}
                 />
             </form>
