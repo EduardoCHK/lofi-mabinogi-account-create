@@ -42,7 +42,7 @@ function App() {
                                 },
                                 body: JSON.stringify({ name: name, password: password }),
                             });
-                            if (!res.ok) throw new Error(res.status);
+                            if (!res.ok) throw new Error(res.status.toString());
                             alert('帳號申請成功!');
                         } catch (e) {
                             console.error(e);
